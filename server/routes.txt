@@ -1,0 +1,26 @@
+Authentication Routes:
+
+1. POST /auth/register
+   - Purpose: Register a new user.
+   - Input: { "username": "string", "password": "string", "role": "string (optional)" }
+   - Output: { "message": "User registered successfully!" } or error message.
+
+2. POST /auth/login
+   - Purpose: Log in a user and return a JWT.
+   - Input: { "username": "string", "password": "string" }
+   - Output: { "message": "Login successful", "token": "JWT string" } or { "error": "Invalid credentials" or "Email not verified" }
+
+3. POST /auth/forgot-password
+   - Purpose: Request a password reset link sent to the user's email.
+   - Input: { "email": "string" }
+   - Output: { "message": "Password reset link sent to your email" } or error message.
+
+4. POST /auth/reset-password/:token
+   - Purpose: Reset the user's password using the reset token.
+   - Input: { "newPassword": "string" }
+   - Output: { "message": "Password has been reset successfully" } or error message.
+
+5. GET /auth/verify-email/:token
+   - Purpose: Verify a user's email using the verification token.
+   - Input: URL parameter { token: "string" }
+   - Output: { "message": "Email verified successfully" } or error

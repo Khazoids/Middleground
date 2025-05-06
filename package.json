@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.7",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "jest-dom": "^4.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-fixed-jsdom": "^0.0.9",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "test:client": "jest --selectProjects=client --env=jest-fixed-jsdom"
+  }
+}

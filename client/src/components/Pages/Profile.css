@@ -1,0 +1,77 @@
+.profile-container {
+    font-family: Arial, sans-serif;
+    /* width: 400px; */
+    margin: 0px auto;
+    margin-left: 0px;
+  }
+  
+  /* h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  } */
+  
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .profile-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-item label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .profile-item .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .value {
+    font-size: 16px;
+    margin-right: 10px;
+    flex: 1; /* Ensures the value takes up remaining space */
+  }
+  
+  input,
+  textarea,
+  select {
+    background-color: white !important; /* Ensures the background is always white */
+    color: black !important;           /* Ensures the text is always black */
+    border: 1px solid #ccc;            /* Adds a light border */
+    border-radius: 4px;                /* Optional: rounds the corners */
+    padding: 10px;                     /* Adds some padding for better UX */
+    width: 30%;                       /* Makes the input field fit the container */
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;                     /* Removes default blue outline */
+    border-color: #4386C4;             /* Highlights the border on focus */
+  }
+  
+  .change-btn {
+    font-size: 12px; /* Adjust text size */
+    color: white; /* Text color */
+    background: rgb(21, 184, 166); /* Background matches the current color */
+    border: 1px;
+    cursor: pointer;
+    padding: 0.6rem 0.8rem; /* Minimal padding for a tight fit */
+    border-radius: 4px; /* Optional: Slight rounding for aesthetics */
+    display: inline-block; /* Ensures the button only surrounds the text */
+    text-align: center; /* Centers text inside */
+    line-height: 1; /* Keeps text vertically aligned */
+  }
+  
+  .change-btn:hover {
+    opacity: 0.8; /* Slight hover effect */
+  }
+  
+  
